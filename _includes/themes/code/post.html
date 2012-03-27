@@ -8,8 +8,8 @@
 </h1>
 
   {% unless page.tags == empty %}
-    <h4>Tags</h4>
   <ul class="tags">
+    <h4>Tags:</h4>
     {% assign tags_list = page.tags %}
     {% include JB/tags_list %}
   </ul>

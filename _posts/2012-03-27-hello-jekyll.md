@@ -7,4 +7,3 @@ tags: []
 {% include JB/setup %}
 
 ##Hello Jekyll
-Jekyll !!
