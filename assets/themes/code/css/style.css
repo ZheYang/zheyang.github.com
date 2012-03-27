@@ -1,0 +1,476 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  
+}
+:root{
+ -webkit-animation: wrap 1s ease;
+  -moz-animation: wrap 1s ease;
+  animation: wrap 1s ease;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a{
+-webkit-transition: color .8s ease, background .8s ease, opacity .8s ease;
+  -moz-transition: color .8s ease, background .8s ease, opacity .8s ease;
+  transition: color .8s ease, background .8s ease, opacity .8s ease;
+}
+
+/*
+ * Webfonts
+ */
+
+@font-face{ /* for IE */
+  font-family: "OFL Sorts Mill Goudy";
+  font-style: normal;
+  font-weight: normal;
+  src: url('../media/oflgoudystmtt-webfont.eot');
+}
+
+@font-face { /* for non-IE */
+  font-family: "OFL Sorts Mill Goudy";
+  font-style: normal;
+  font-weight: normal;
+  src: url(http://:/) format("No-IE-404"), url('../media/oflgoudystmtt-webfont.woff') format('woff'), url('oflgoudystmtt-webfont.ttf') format('truetype'), url('../media/oflgoudystmtt-webfont.svg#webfontHB4987y4') format('svg');
+}
+
+
+/*
+ * Basic
+ */
+
+body {
+  color: #657b83;
+  font: 100%/1.5 'Palatino', "Palatino Linotype", 'Georgia', serif;
+}
+
+a {
+  color: #dc322f;
+  text-decoration: none;
+}
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+h1,
+h2,
+h3 {
+  font-family: "OFL Sorts Mill Goudy",
+               "Palatino",
+               "Georgia",
+               serif;
+  font-weight: normal;
+  margin-bottom: .25em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-style: italic;
+}
+
+em {
+  font-style: italic;
+}
+
+p,
+table,
+pre,
+blockquote,
+ul,
+ol {
+  margin-bottom: 1em;
+}
+
+pre {
+  overflow: auto;
+}
+
+pre,
+code {
+  font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+               Consolas, Monaco, 'Lucida Console', monospaced;
+  font-size: .75em;
+}
+
+
+/*
+ * Specifics
+ */
+
+header,
+article,
+footer {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+}
+
+  footer {
+    clear: left;
+    margin-bottom: 1em;
+  }
+
+header {
+  margin-bottom: 2em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+#elsewhere a {
+  color: #dc322f;
+}
+
+  #elsewhere a:hover {
+    color: #657b83;
+  }
+
+h1 a,
+h2 a, 
+article .tags a {
+  color: #657b83;
+  text-decoration: none;
+}
+
+  h1 a:hover,
+  h2 a:hover, 
+  article .tags a:hover {
+    color: #dc322f;
+    text-decoration: none;
+  }
+
+article {
+  margin-bottom: 2em;
+  -webkit-animation-delay: .7s;
+  -moz-animation-delay: .7s;
+}
+
+  article ul,
+  article ol {
+    margin-left: 1em;
+  }
+
+    article ul {
+      list-style-type: square;
+    }
+
+    article ol {
+      list-style-type: decimal;
+    }
+
+  .tags::before {
+    content: "Tags: ";
+  }
+
+  .tags {
+    list-style-type: none;
+    margin-left: 0;
+  }
+
+  .tags li {
+    display: inline;
+  }
+
+    .tags li::after {
+      content: ", ";
+    }
+
+    .tags li:last-child::after {
+      content: ". ";
+    }
+
+  table,
+  thead,
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+  }
+
+  th,
+  td.headerless {
+    text-align: left;
+    font-weight: bold;
+  }
+
+  tr {
+    margin-bottom: .5em;
+  }
+
+    figure img {
+      width: 100%;
+    }
+
+    table caption {
+      caption-side: bottom;
+      text-align: left;
+    }
+
+    #elsewhere,
+    footer,
+    table caption,
+    figure figcaption {
+      -webkit-animation: txt 1.5s 1 ease;
+	  -moz-animation: txt 1.5s 1 ease;
+	  animation: txt 1.5s 1 ease;
+      font-size: .8em;
+    }
+
+    .pagination ul li{
+        list-style:none; 
+        display:inline-block;
+        margin:0 10px;
+        zoom:1;
+    }
+
+    .pagination ul li.disabled{
+        display:none; 
+    }
+
+    .updated{
+        font-size:14px;
+        margin-left:6px;
+    }
+
+/*
+ * Media Queries
+ */
+
+@media screen and (min-width: 30em) {
+  #elsewhere {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 40em) {
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.25em;
+    font-style: italic;
+  }
+
+  footer,
+  table caption,
+  figure figcaption {
+    font-size: 1em;
+    -webkit-animation: txt 1.5s 1 ease;
+  }
+
+  article ul,
+  article ol {
+    margin-left: 0;
+  }
+
+  article p,
+  article blockquote,
+  article ul,
+  article ol {
+    font-size: 1.125em;
+  }
+
+    article ul p,
+    article ol p {
+      font-size: 1em;
+    }
+
+  .tags {
+    font-size: 1em;
+  }
+
+}
+
+@media screen and (min-width: 46em) {
+
+  header,
+  article,
+  footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 55em;
+  }
+
+  #elsewhere {
+    font-family: "OFL Sorts Mill Goudy",
+                 "Palatino",
+                 "Georgia",
+                 serif;
+    font-size: 1.25em;
+  }
+
+  table {
+    display: table;
+  }
+
+  tr {
+    display: table-row;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tbody {
+    display: table-row-group;
+  }
+
+  td,
+  th {
+    display: table-cell;
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: .2em;
+  }
+
+    table th, table td {
+      padding-right: 1em;
+      text-align: left;
+    }
+
+
+}
+
+@media screen and (min-width: 66em) {
+
+  abbr.updated {
+    color: #dc322f;
+    float: left;
+    font-family: "OFL Sorts Mill Goudy",
+                 "Palatino",
+                 "Georgia",
+                 serif;
+    font-size: 1.6em;
+    line-height: 2em;
+    margin-left: -6.25em;
+  }
+
+  .tags {
+    float: left;
+    margin-left: -10em;
+  }
+
+    .tags li {
+      display: block;
+    }
+
+    .tags::before,
+    .tags li::after,
+    .tags li:last-child::after {
+      content: "";
+    }
+
+  figure {
+    float: left;
+    margin: 1em 1em 1em -10em;
+  }
+
+  table.hanging {
+    margin-left: -10em;
+  }
+
+  header {
+    position: relative;
+  }
+
+}
+
+
+@-webkit-keyframes txt {
+	0% {opacity: 0;}
+	30% {opacity: 0;}
+	100% {opacity: 100;}
+}
+
+@-moz-keyframes txt {
+	0% {opacity: 0;}
+	30% {opacity: 0;}
+	100% {opacity: 100;}
+}
+
+@keyframes txt {
+	0% {opacity: 0;}
+	30% {opacity: 0;}
+	100% {opacity: 100;}
+}
+
+@-webkit-keyframes wrap {
+	0% {opacity: 0;}
+	60% {opacity: 0;}
+	100% {opacity: 100;}
+}
+
+@-moz-keyframes wrap {
+	0% {opacity: 0;}
+	60% {opacity: 0;}
+	100% {opacity: 100;}
+}
+
+@keyframes wrap {
+	0% {opacity: 0;}
+	60% {opacity: 0;}
+	100% {opacity: 100;}
+}
