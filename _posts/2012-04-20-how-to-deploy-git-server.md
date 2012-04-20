@@ -76,6 +76,7 @@ git服务端已经搭建完了，来测试一下：
 	git:x:1000:1000::/home/git:/usr/bin/git-shell
 
 
+
 参考资料:
 
 [progit][progit_main]	
