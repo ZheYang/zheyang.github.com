@@ -9,7 +9,7 @@ date: 2012-04-20 09:20
 {% include JB/setup %}
 
 
-# 如何搭建git server
+## 如何搭建git server
 
 *这是 [progit][]的笔记*
 
