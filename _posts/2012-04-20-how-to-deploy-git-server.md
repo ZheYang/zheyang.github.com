@@ -11,7 +11,7 @@ date: 2012-04-20 09:20
 
 ## 如何搭建git server
 
-*这是 [progit][]的笔记*
+*这是阅读[progit][]时做的笔记*
 
 git server搭建非常简单，只需要在服务端开启ssh服务，并安装git。
 
@@ -76,6 +76,9 @@ git服务端已经搭建完了，来测试一下：
 	git:x:1000:1000::/home/git:/usr/bin/git-shell
 
 
-	
+参考资料:
+
+[progit][progit_main]	
 	
 [progit]:http://progit.org/book/zh/ch4-0.html
+[progit_main]:http://progit.org/book/zh/
