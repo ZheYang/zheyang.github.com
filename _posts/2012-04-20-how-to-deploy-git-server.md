@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "git三两事之git服务器搭建"
-category: git Notes
+category: notes
 tags: [git]
 comments: true
 date: 2012-04-20 09:20
